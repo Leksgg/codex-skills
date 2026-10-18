@@ -1,6 +1,6 @@
 ---
 name: secure-coding
-description: "Aplica comprobaciones de seguridad al crear o modificar autenticación, sesiones, permisos, consultas a BD, subidas, secretos, CORS, webhooks, pagos o flujos con entrada no fiable, aunque el usuario no hable de seguridad. Limita la revisión al cambio y su contexto; una auditoría completa es security-audit."
+description: "Aplica comprobaciones de seguridad al crear o modificar endpoints o rutas de API, autenticación (login, contraseñas, JWT), sesiones, permisos y roles, consultas a BD, subidas, secretos, CORS, webhooks, pagos o flujos con entrada no fiable, aunque el usuario no hable de seguridad. Limita la revisión al cambio y su contexto; una auditoría completa es security-audit."
 ---
 
 # Secure coding
