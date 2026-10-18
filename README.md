@@ -44,6 +44,15 @@ En macOS/Linux, crea enlaces simbólicos de las carpetas de `skills/` dentro de 
 - Las autorizaciones ya dadas por el usuario se respetan; una auditoría por sí sola no autoriza cambios.
 - Las evaluaciones del repo original ejecutan Claude y no se presentan como evaluaciones de Codex.
 
+### Qué difiere de la versión de Claude (a propósito)
+
+- Invocación `$skill` en lugar de `/skill`, y `AGENTS.md` en lugar de `CLAUDE.md`.
+- Sin `argument-hint` ni `disable-model-invocation`, que son campos de Claude Code.
+- Cuerpos más cortos: la plantilla de informe y los ejemplos de `security-audit`, `secure-coding` y `reuse-first` no se han portado.
+- Mejoras que nacieron aquí y se llevaron a la versión de Claude: no abrir almacenes de credenciales, replay e idempotencia en webhooks y probar el caso de abuso.
+
+Todo lo demás que difiera es deriva y conviene corregirlo. Al cambiar una skill en uno de los dos repos, revisa la otra.
+
 Prueba del instalador, en un destino aislado dentro de `.validation/`:
 
 ```powershell

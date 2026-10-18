@@ -1,6 +1,6 @@
 ---
 name: reuse-first
-description: Busca código y dependencias existentes antes de añadir funciones, componentes, módulos o utilidades a un proyecto. Úsala al crear piezas reutilizables o cuando el usuario pida evitar duplicación, reutilizar o comprobar si algo ya existe. No requiere búsquedas amplias para cambios triviales.
+description: "Busca código y dependencias existentes antes de añadir funciones, componentes, módulos o utilidades a un proyecto. Úsala al crear piezas reutilizables y cuando el usuario escriba $reuse-first, \"reutiliza código\", \"no dupliques\", \"mira si ya existe\", \"¿ya tenemos algo para...?\", \"don't reinvent the wheel\"." No requiere búsquedas amplias para cambios triviales.
 ---
 
 # Reuse first

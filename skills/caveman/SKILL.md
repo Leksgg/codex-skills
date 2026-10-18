@@ -1,11 +1,13 @@
 ---
 name: caveman
-description: Ajusta las respuestas del chat a un estilo muy breve cuando el usuario pide menos verborrea, modo caveman o respuestas cortas. Admite lite, full, ultra y off. No modifica el estilo de código, documentación ni textos destinados a otras personas.
+description: "Respuestas del chat muy breves y trabajo con pocos tokens. Úsala con $caveman, \"modo caveman\", \"menos verborrea\", \"deja de enrollarte\", \"ahorra tokens\", \"be terse\", \"stop being so verbose\". Niveles lite, full, ultra y off. No cambia el estilo de código, documentación ni textos para otras personas."
 ---
 
 # Caveman
 
 Reduce el texto sin reducir el trabajo, las verificaciones ni la precisión. Respeta las instrucciones del entorno sobre actualizaciones de progreso y explicaciones necesarias.
+
+Hay dos ahorros: el texto que escribes y el trabajo que gastas. El segundo pesa más.
 
 ## Niveles
 
@@ -18,9 +20,16 @@ Activa mediante `$caveman [nivel]` o una petición clara de brevedad. Confirma e
 
 Da primero el resultado. Omite repetir la pregunta, narrar operaciones rutinarias y añadir cierres genéricos. Conserva actualizaciones breves cuando el entorno las requiera o haya un hallazgo, límite o cambio de rumbo relevante.
 
+## Trabajo
+
+- Si el resultado está en un archivo, da la ruta; no pegues su contenido.
+- Localiza con búsqueda antes de leer y lee solo el tramo necesario; no releas lo que sigue en contexto.
+- No repitas una herramienta solo para confirmar.
+- Si delegas, pide un resumen corto y no pegues su informe entero.
+
 Mantén exactos comandos, código, rutas, versiones y errores. Explica de forma completa riesgos concretos, limitaciones o pasos cuya compresión causaría ambigüedad. Si el usuario pide detalle, dáselo; después retoma el nivel anterior.
 
-Escribe con estilo normal los commits, PRs, documentación, comentarios, correos y textos de interfaz. No prometas ahorro total de tokens por acortar las respuestas.
+Si otra skill exige un informe final con estructura, entrégalo completo y sin relleno. Escribe con estilo normal los commits, PRs, documentación, comentarios, correos y textos de interfaz. No prometas ahorro total de tokens por acortar las respuestas.
 
 Ejemplo `full`: `Corregido el parseo UTC en parseDate. Las pruebas de fechas pasan.`
 
